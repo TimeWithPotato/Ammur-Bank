@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="mt-12">
+        <h1 class="text-7xl font-semibold text-center">Grab your<span class="text-purple-700 ">Ammajaan</span> Theke
+            <span class="text-red-600">Moneeeyyy...!!!!</span></h1>
+    </header>
+    <main>
+        <section class="mt-12 ml-40">
+            <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto">
+                <div class="bg-amber-500 w-3/4 p-16 rounded-lg drop-shadow-2xl hover:scale-125">
+                    <h3 class="text-3xl font-medium text-white">Deposit</h3>
+                    <h1 class="text-5xl font-semibold text-white">$<span id="current-deposit">0.00</span></h1>
+                </div>
+                <div class="bg-yellow-500 w-3/4 p-16 rounded-lg drop-shadow-2xl hover:scale-125">
+                    <h3 class="text-3xl font-medium text-white">Withdraw</h3>
+                    <h1 class="text-5xl font-semibold text-white">$<span id="current-withdraw">0.00</span></h1>
+                </div>
+                <div class="bg-red-500 w-3/4 p-16 rounded-lg drop-shadow-2xl hover:scale-125">
+                    <h3 class="text-3xl font-medium text-white">Balance</h3>
+                    <h1 class="text-5xl font-semibold text-white">$<span id="current-balance">1240.00</span></h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deposit and Withdraw -->
+        <section class="mt-12">
+          <div class="grid grid-cols-2 gap-4 w-3/4 mx-auto">
+            <div class="bg-teal-600 py-20 rounded-lg shadow-2xl">
+             <div class="ml-5">
+                <h3 class="text-3xl text-medium text-white mb-4">Deposit</h3>
+                <input class="w-2/6 py-5 pl-5 block rounded-lg" type="number" name="" id="deposit-field" placeholder="Enter your deposit amount">
+                <button   class="bg-red-600 mt-3 px-20 py-3 text-white text-2xl font-medium hover:bg-cyan-700 rounded-lg" id="btn-deposit">Deposit</button>
+             </div>
+            </div>
+            <div class="bg-sky-600 py-20 rounded-lg shadow drop-shadow-2xl">
+               <div class="ml-5">
+                <h3 class="text-3xl text-medium text-white mb-4">Withdraw</h3>
+                <input class="w-2/6 py-5 pl-5 block rounded-lg" type="number" name="" id="withdraw-field" placeholder="Enter your withdrawal amount">
+                <button id="btn-withdraw"  class="bg-red-600 mt-3 px-20 py-3 text-white text-2xl font-medium hover:bg-cyan-700 rounded-lg">Withdraw</button>
+               </div>
+            </div>
+          </div>
+        </section>
+    </main>
+    <script src="js/utilites.js"></script>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
